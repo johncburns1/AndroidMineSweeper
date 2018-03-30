@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutcontent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:background="@drawable/atom"
+    android:orientation="vertical"
+    tools:context="hu.ait.android.minesweeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingTop="30dp"
+        android:weightSum="1">
+
+        <hu.ait.android.minesweeper.view.MineSweeperView
+            android:id="@+id/msview"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_weight="1" />
+
+        <ToggleButton
+            android:id="@+id/flag_mode_toggle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textOff="@string/toggle_off"
+            android:textOn="@string/toggle_on" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_btn" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/win_loss_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="30dp" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

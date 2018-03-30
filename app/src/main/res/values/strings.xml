@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+    <string name="toggle_on">Place Flags</string>
+    <string name="toggle_off">Try fields</string>
+    <string name="clear_btn">Clear Board</string>
+    <string name="win_status">You Have Won The Game</string>
+    <string name="lose_status">You Have Lost The Game</string>
+    <string name="endgame_message">Press Clear Board to start a new game</string>
+    <string name="OK_btn">OK</string>
+</resources>
